@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "868d5455-6b84-432b-9618-5cfef3e716d9",
+		"name": "Cloud-firestore-firebase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"usr_firstname\": \"Jay\",\n\t\"usr_lastname\": \"Patel\",\n\t\"usr_email\": \"jay@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/api/student",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Student ById",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"usr_firstname\": \"Joyy\",\n\t\"usr_lastname\": \"Pateeel\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/api/student/Ctz89j26oY6HXp08Ugab",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"student",
+						"Ctz89j26oY6HXp08Ugab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Student ById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/api/student/Ctz89j26oY6HXp08Ugab",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"student",
+						"Ctz89j26oY6HXp08Ugab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/api/student",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student ById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4000/api/student/Ctz89j26oY6HXp08Ugab",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"student",
+						"Ctz89j26oY6HXp08Ugab"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
